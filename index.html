@@ -85,7 +85,7 @@
           <div class="about-card">
             <div class="self">
               <h2>Hello!</h2>
-              <h1 class="paper-title">I am Yulia Buibarova</h1>              
+              <h1 class="paper-title">I am Yulia Buibarova</h1>
               <h3 class="paper-text">Frontend developer</h3>
               <ul class="contact-list">
                 <li class="address">Ukraine Mykolaiv City</li>
@@ -104,12 +104,12 @@
       </section>
       <section class="description-selfe">
         <div class="entry" id="skills">
-          <h2>SKILLS</h2>
+          <h2 class="title">SKILLS</h2>
           <div class="content">
             <ul class="skills">
               <li>Photoshop</li>
               <li>Figma</li>
-              <li>JavaScript/li>
+              <li>JavaScript</li>
               <li>jQuery</li>
               <li>CSS3</li>
               <li>HTML5</li>
@@ -132,7 +132,7 @@
                     <p class="main-slide-title title_squir">HTML, CSS, Javascript</p>
                     <h4 class="main-slide-text text_2">Scout landing page</h4>
                   </div>
-                </div>              
+                </div>
               </div>
               <div class="main-slide main__slide-middle">
                 <a class="project-link" href="https://julia2017-yg.github.io/delivary/">
@@ -193,21 +193,37 @@
           </div>
         </div>
         <div class="entry" id="education">
-          <h2>EDUCATION</h2>
+          <h2 class="title">EDUCATION</h2>
           <div class="content">
-            <h4>Apr 2019 - Nov 2019</h4>
+            <h4 class="title-date">Apr 2019 - Nov 2019</h4>
             <p class="content-text">Computer Academy Step</p>
             <p><em>Front-End development</em></p>
           </div>
           <div class="content">
-            <h4>Sep 2003 - Jul 2007</h4>
+            <h4 class="title-date">Sep 2003 - Jul 2007</h4>
             <p class="content-text">V.N. Karazin Kharkiv National University</p>
             <p><em>The Faculty of Economics</em></p>
             <p><em> Management of Organizations</em></p>
           </div>
         </div>
+        <div class="entry">
+          <h2 class="title">Code examples</h2>
+          <pre>
+            <code>
+              function makeid() {
+                var text = "";
+                var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+                for (var i = 0; i < 5; i++)
+                  text += possible.charAt(Math.floor(Math.random() * possible.length));
+                const result = text.split("");
+                return result;
+                
+              }
+              </code>
+          </pre>
+        </div>
         <div class="entry" id="languages">
-          <h2>Languages</h2>
+          <h2 class="title">Languages</h2>
           <ul class="skills">
             <li>Ukrainian (native)</li>
             <li>Russian (Advanced)</li>
@@ -215,23 +231,7 @@
           </ul>
         </div>
         <div class="entry">
-          <h2>Code examples</h2>
-          <pre><code class="html">
-                  <code class="language-javascript hljs">
-                    <span class="hljs-keyword">function</span> <span class="hljs-title function_">convertHashToArray</span>(<span class="hljs-params">hash</span>) {
-                        <span class="hljs-keyword">const</span> result = [];
-                    
-                        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">const</span> [key, value] <span class="hljs-keyword">of</span> <span class="hljs-title class_">Object</span>.<span class="hljs-title function_">entries</span>(hash)) {
-                            result.<span class="hljs-title function_">push</span>([key, value]);
-                        }
-                    
-                        <span class="hljs-keyword">return</span> result.<span class="hljs-title function_">sort</span>();
-                    }
-                                                </code>
-                </code></pre>
-        </div>
-        <div class="entry">
-          <h2>Video presentation</h2>
+          <h2 class="title">Video presentation</h2>
           <iframe width="840" height="315" src="https://www.youtube.com/embed/Ya7YGVjGlqo" title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>

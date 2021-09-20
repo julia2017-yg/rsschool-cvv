@@ -48,11 +48,25 @@ pre {
   box-shadow: 0px 1px 18px 15px rgba(254, 249, 215, 0.2);
 }
 .hljs {
-  background-color: #9a8b9b;
+  background-color: #433245;
+  color:rgb(154, 139, 155);
+}
+iframe {
+  border: none;
 }
 .title,
 h2 {
   color: #ae6fb1;
+}
+.title {
+  margin-bottom: 30px;
+}
+.content {
+  line-height: 30px;
+}
+.title-date {
+  text-decoration: underline;
+  color: #9a8b9b;
 }
 .logo-link {
   position: relative;
@@ -111,6 +125,16 @@ h2 {
   text-decoration: underline;
   color: #6b5063;
   transition: 0.3s;
+}
+.skills {
+  display: inline-grid;
+  grid-template-rows: repeat(3, auto);
+  gap: 28px;
+  align-items: center;
+  width: 100%;
+}
+.skills:nth-child(3n - 2) {
+  grid-row: 1 / 2;
 }
 .main-container {
   max-width: 880px;
