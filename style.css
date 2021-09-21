@@ -172,7 +172,7 @@ h2 {
   object-fit: cover;
   border-radius: 50%;
 }
-.about-photo::before, 
+.about-photo::before,
 .about-photo::after {
   content: '';
   position: absolute;
@@ -181,7 +181,7 @@ h2 {
   border-radius: 50%;
   z-index: -1;
 }
-.about-photo::before { 
+.about-photo::before {
   width: 165px;
   height: 165px;
   transform: translate(6px, 10px);
@@ -288,10 +288,6 @@ h3 {
 .overlap {
   position: absolute;
   top: 17px;
-  background-color: rgba(67, 50, 69, 0.6);
-  width: 100%;
-  height: 100%;
-  display: block;
 }
 .overlap-inner {
   position: absolute;
@@ -334,6 +330,7 @@ ul.skills li {
 }
 .footer-inner {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .contact-links {
@@ -352,6 +349,19 @@ ul.skills li {
   text-decoration: underline;
   color: #9a8b9b;
   transition: 0.3s;
+}
+@media (max-width: 1024px) {
+  .container {
+    max-width: 992px;
+  }
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+  iframe {
+    width: 640px;
+    height: 265px;
+  }
 }
 @media (max-width: 992px) {
   .logo-link span {
@@ -403,8 +413,8 @@ ul.skills li {
     position: relative;
     cursor: pointer;
   }
-  .hamburger-menu::before, 
-  .hamburger-menu::after, 
+  .hamburger-menu::before,
+  .hamburger-menu::after,
   .hamburger-menu span {
     position: absolute;
     left: 0;
@@ -413,7 +423,7 @@ ul.skills li {
     background-color: #433245;
     transition: all 0.3s ease 0s;
   }
-  .hamburger-menu::before, 
+  .hamburger-menu::before,
   .hamburger-menu::after {
     content: "";
   }
