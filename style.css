@@ -270,8 +270,10 @@ h3 {
 }
 .main-slide-text,
 .main-slide-title {
-  color:#fff;
+  color: #ae6fb1;
   padding: 4px;
+  font-weight: 700;
+  font-size: 16px;
 }
 .project-link {
   position: relative;
@@ -279,11 +281,17 @@ h3 {
 .overlap {
   position: absolute;
   top: 17px;
+  width: 100%;
 }
 .overlap-inner {
   position: absolute;
-  bottom: 52px;
   left: 40px;
+  width: 100%;
+  top: 185px;
+}
+.overlap-inner:hover .main-slide-text,
+.overlap-inner:hover .main-slide-title {
+  color: #433245;
 }
 .main-slide img{
   width: 250px;
@@ -317,7 +325,7 @@ ul.skills li {
   background-color: #fff;
 }
 .footer {
-  padding: 50px 50px;
+  padding: 50px 15px;
 }
 .footer-inner {
   display: flex;
@@ -341,9 +349,14 @@ ul.skills li {
   color: #9a8b9b;
   transition: 0.3s;
 }
+@media (max-width: 1200px)  {
+  .container {
+    max-width: 965px;
+  }
+}
 @media (max-width: 1024px) {
   .container {
-    max-width: 992px;
+    max-width: 900px;
   }
   .footer-inner {
     flex-direction: column;
