@@ -189,6 +189,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
@@ -365,6 +366,9 @@ ul.skills li {
     font-weight: 300;
     font-size: 14px;
   }
+  .about-cards {
+    flex-direction: column;
+  }
   iframe {
     width: 470px;
     height: 265px;
@@ -447,5 +451,18 @@ ul.skills li {
   .hamburger-menu.active::after {
     bottom: 50%;
     transform: rotate(45deg) translate(0px, 50%);
+  }
+  .about-cards {
+    max-width: 600px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 300px;
+  }
+  .about-cards {
+    max-width: 300px;
+    padding: 20px 5px;
+    box-shadow: none;
   }
 }
