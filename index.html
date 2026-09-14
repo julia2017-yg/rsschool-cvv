@@ -1,56 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>CV</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <header class="header">
-      <div class="header__photo">
-        <img src="./image/avatar.jpg" alt="Photo" />
-      </div>
-      <div class="header__info">
-        <h1>Yulia Buibarova</h1>
-        <p>Frontend Developer</p>
-      </div>
-    </header>
-    <section class="content">
-      <aside class="sidebar">
-        <section class="biography">
-          <h2>Biography</h2>
-        </section>
-        <section class="experience">
-          <h2>Experience</h2>
-        </section>
-      </aside>
-      <main class="main">
-        <section class="education">
-          <h2>Education</h2>
-        </section>
-        <section class="skills">
-          <h2>Skills</h2>
-        </section>
-        <section class="language">
-          <h2>Language</h2>
-        </section>
-        <section class="qualities">
-          <h2>Key Qualities</h2>
-        </section>
+    <div class="container">
+      <header class="header">
+        <div class="header-about">
+          <svg class="header-waves" viewBox="0 0 180 80" aria-hidden="true">
+            <path d="M0 15 C30 45 60 -15 90 15 S150 45 180 15" />
+            <path d="M0 35 C30 65 60 5 90 35 S150 65 180 35" />
+            <path d="M0 55 C30 85 60 25 90 55 S150 85 180 55" />
+          </svg>
+          <p class="header-about-text">
+            Frontend Developer with 4 years of experience creating responsive
+            landing and prelanding pages using HTML, CSS, JavaScript and SCSS.
+            Experienced in working with forms, analytics, tracking integrations
+            and third-party APIs. Currently expanding my skills in React and
+            TypeScript and moving toward modern frontend development. I enjoy
+            learning new technologies and turning ideas and designs into clean,
+            user-friendly interfaces.
+          </p>
+        </div>
+        <div class="header-info">
+          <h1 class="header-name">Yulia Buibarova</h1>
+          <p class="header-position">Frontend Developer</p>
+        </div>
+        <svg
+          class="header-waves header-waves-right"
+          viewBox="0 0 180 80"
+          aria-hidden="true"
+        >
+          <path d="M0 15 C30 45 60 -15 90 15 S150 45 180 15" />
+          <path d="M0 35 C30 65 60 5 90 35 S150 65 180 35" />
+          <path d="M0 55 C30 85 60 25 90 55 S150 85 180 55" />
+        </svg>
+        <div class="header-photo">
+          <img src="./images/cv-photo.png" alt="cv photo">
+        </div>
+      </header>
+      <main class="main-content">
+        <div class="main-content-left">
+          <div class="contact">
+            <h2>Contacts</h2>
+            <p>Location: <span>Mykolaiv, Ukraine</span></p>
+            <p>
+              Email:
+              <a href="mailto:yuliabuibarova@gmail.com"
+                >yuliabuibarova@gmail.com</a
+              >
+            </p>
+            <p>
+              GitHub:
+              <a
+                href="https://github.com/julia2017-yg"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com/julia2017-yg</a
+              >
+            </p>
+            <p>
+              LinkedIn:
+              <a
+                href="https://linkedin.com/in/yulia-buibarova-3162081a8"
+                target="_blank"
+                rel="noopener noreferrer"
+                >here</a
+              >
+            </p>
+            <p>
+              Telegram:
+              <a
+                href="https://t.me/buibarova"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@buibarova</a
+              >
+            </p>
+          </div>
+          <div class="experience">
+            <h2>Experience</h2>
+            <ul>
+              <li>
+                <strong>Frontend Developer</strong> - Filancy LTD Marketing —
+                Remote 2021-2025
+                <p>
+                  Created and adapted landing and prelanding pages. Implemented
+                  forms and integrated them with CRMs, APIs, and tracking
+                  systems.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="skills">
+            <h2>Skills</h2>
+            <ul>
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>Responsive Web Design</li>
+              <li>Figma, Photoshop</li>
+              <li>Version Control (Git)</li>
+              <li>Bootstrap</li>
+              <li>Seo fundamentals</li>
+              <li>English B1</li>
+            </ul>
+            <div class="additional-information">
+              <h2>Additional Information</h2>
+              <ul>
+                <li>Strong communication skills</li>
+                <li>Team player</li>
+                <li>Responsible and reliable</li>
+                <li>Willing to learn and develop professionally</li>
+              </ul>
+            </div>
+            <div class="code-section">
+              <div class="code-inner">
+                <h2 class="code-title">Code example</h2>
+<pre><code><span class="keyword">function</span> <span class="function">countVowels</span>(text) {
+  <span class="keyword">const</span> vowels = <span class="string">"aeiou"</span>;
+  <span class="keyword">let</span> count = <span class="number">0</span>;
+  <span class="keyword">for</span> (<span class="keyword">const</span> char <span class="keyword">of</span> text.toLowerCase()) {
+    <span class="keyword">if</span> (vowels.includes(char)) {
+      count++;
+    }
+  }
+  <span class="keyword">return</span> count;
+}
+<span class="function">console</span>.log(<span class="function">countVowels</span>(<span class="string">"JavaScript"</span>));</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="main-content-right">
+          <div class="education">
+            <h2>Education</h2>
+            <div>
+              <h3>V. N. Karazin Kharkiv National University</h3>
+              <p>Faculty: Economics</p>
+              <p>Major: Management</p>
+              <p>Kharkiv, Ukraine</p>
+              <p>Master&rsquo;s Degree &middot; 2003&ndash;2008</p>
+            </div>
+            <div>
+              <h3>Frontend Development</h3>
+              <p>Frontend Computer Academy Step</p>
+              <p>2019</p>
+            </div>
+          </div>
+          <div class="projects">
+            <h2>Projects</h2>
+            <div class="project-item">
+              <h3>Corporate Website</h3>
+              <p><strong>Technologies:</strong> HTML5, SCSS, JavaScript</p>
+              <ul>
+                <li>
+                  Developed a responsive multi-section corporate website from a
+                  design reference.
+                </li>
+                <li>
+                  Built the page structure using semantic HTML5 and organized
+                  styles with SCSS.
+                </li>
+                <li>
+                  Implemented responsive layouts for desktop, tablet and mobile
+                  screen sizes.
+                </li>
+                <li>
+                  Added interactive navigation and UI elements using JavaScript.
+                </li>
+                <li>
+                  Ensured consistent layout and functionality across different
+                  screen sizes and browsers.
+                </li>
+                <li>
+                  Focused on pixel-accurate implementation and attention to
+                  design details.
+                </li>
+              </ul>
+              <a
+                href="https://julia2017-yg.github.io/scout/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View project on GitHub</a
+              >
+            </div>
+            <div class="project-item">
+              <h3>Landing Page Projects</h3>
+              <p><strong>Technologies:</strong> HTML, CSS, JavaScript</p>
+              <ul>
+                <li>
+                  Developed a responsive bilingual website with Ukrainian and
+                  Russian language versions.
+                </li>
+                <li>Implemented interactive quizzes using JavaScript.</li>
+                <li>
+                  Integrated contact forms with Google Sheets for lead
+                  collection.
+                </li>
+                <li>
+                  Implemented responsive layouts for desktop and mobile devices.
+                </li>
+              </ul>
+              <a
+                href="https://julia2017-yg.github.io/autoXata/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View project on GitHub</a
+              >
+            </div>
+          </div>
+        </div>
       </main>
-    </section>
+      <footer class="footer">
+        <svg class="footer-wave" viewBox="0 0 180 80" aria-hidden="true">
+          <path d="M0 15 C30 45 60 -15 90 15 S150 45 180 15" />
+          <path d="M0 35 C30 65 60 5 90 35 S150 65 180 35" />
+          <path d="M0 55 C30 85 60 25 90 55 S150 85 180 55" />
+        </svg>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <ul class="footer-nav-list">
+            <li>
+              <a
+                class="footer-github"
+                href="https://github.com/julia2017-yg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg
+                  class="social-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  width="32"
+                  height="32"
+                >
+                  <path
+                    fill="#1f2328"
+                    d="M10.226 17.284c-2.965-.36-5.054-2.493-5.054-5.256 0-1.123.404-2.336 1.078-3.144-.292-.741-.247-2.314.09-2.965.898-.112 2.111.36 2.83 1.01.853-.269 1.752-.404 2.853-.404 1.1 0 1.999.135 2.807.382.696-.629 1.932-1.1 2.83-.988.315.606.36 2.179.067 2.942.72.854 1.101 2 1.101 3.167 0 2.763-2.089 4.852-5.098 5.234.763.494 1.28 1.572 1.28 2.807v2.336c0 .674.561 1.056 1.235.786 4.066-1.55 7.255-5.615 7.255-10.646C23.5 6.188 18.334 1 11.978 1 5.62 1 .5 6.188.5 12.545c0 4.986 3.167 9.12 7.435 10.669.606.225 1.19-.18 1.19-.786V20.63a2.9 2.9 0 0 1-1.078.224c-1.483 0-2.359-.808-2.987-2.313-.247-.607-.517-.966-1.034-1.033-.27-.023-.359-.135-.359-.27 0-.27.45-.471.898-.471.652 0 1.213.404 1.797 1.235.45.651.921.943 1.483.943.561 0 .92-.202 1.437-.719.382-.381.674-.718.944-.943"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                class="footer-course"
+                href="https://rs.school/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./images/course-logo.svg" alt="Course logo">
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="footer-year">&copy; 2026</p>
+      </footer>
+    </div>
   </body>
 </html>
